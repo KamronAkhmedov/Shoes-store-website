@@ -14,6 +14,21 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 5px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: linear-gradient(to top, #c72092, #6c14d0);
 }
 
 section {
@@ -501,4 +516,223 @@ section .main .button:hover i {
   background-image: url(image/loging_bg.png);
   background-size: cover;
   background-position: center;
+}
+
+.login-form .left img {
+  width: 650px;
+}
+
+.login-form .right {
+  position: relative;
+  top: -50px;
+  left: -60px;
+  padding: 50px 80px;
+}
+.login-form .right h1 {
+  font-family: prevattscriptssk;
+  font-size: 45px;
+  margin-bottom: 40px;
+}
+.login-form .right .user-name {
+  margin-bottom: 5px;
+  display: block;
+}
+.login-form .right .user {
+  border: 2px solid #6c14d0;
+  border-radius: 5px;
+  width: 350px;
+  height: 40px;
+  display: flex;
+  position: relative;
+}
+.login-form .right .user i {
+  position: absolute;
+  top: 9px;
+  left: 15px;
+  color: #c72092;
+}
+.login-form .right .user .user-input {
+  position: absolute;
+  left: 13%;
+  height: 100%;
+  width: 295px;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 15px;
+}
+.login-form .right .password-tag {
+  margin: 15px 0 5px 0;
+  display: block;
+}
+.login-form .right .password {
+  border: 2px solid #6c14d0;
+  border-radius: 5px;
+  width: 350px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+.login-form .right .password i {
+  margin: 0 15px;
+  color: #c72092;
+}
+.login-form .right .password input {
+  flex: 1;
+  margin-right: 10px;
+  height: 100%;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 15px;
+}
+::-webkit-input-placeholder {
+  color: #000;
+  opacity: 0.7;
+}
+
+.login-form .right .forget {
+  position: relative;
+  left: 62%;
+  margin: 6px 0 10px 0;
+  cursor: pointer;
+  color: rgb(27, 27, 228);
+  text-decoration: underline;
+}
+
+.login-form .right button {
+  width: 350px;
+  color: white;
+  padding: 7px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  background: linear-gradient(to right, #c72092, #6c14d0);
+}
+
+.login-form .right .login-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+}
+.login-form .right .login-icon a {
+  width: 30px;
+  height: 30px;
+  margin: 0 3px;
+  border-radius: 50%;
+  background: #f3f3f3;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+}
+.login-form .right .login-icon img {
+  width: 20px;
+  margin: 5px;
+}
+
+/* * Footer */
+
+footer {
+  width: 100%;
+}
+
+footer .footer-main {
+  padding: 5px 20px 20px;
+  width: 100%;
+  background: #f3f1f1;
+  display: flex;
+  justify-content: space-around;
+}
+footer .footer-main .tag {
+  margin: 10px 0;
+  text-align: left;
+}
+footer .footer-main .tag h1 {
+  font-size: 25px;
+  margin: 25px 0;
+  color: #1c0080;
+}
+
+footer .footer-main .tag a {
+  display: block;
+  color: #000;
+  text-decoration: none;
+  margin: 9px 0;
+}
+footer .footer-main .tag a i {
+  padding-right: 10px;
+  transition: 0.3s;
+}
+footer .footer-main .tag a i:hover {
+  color: #c72092;
+}
+
+footer .footer-main .tag .social-link {
+  display: flex;
+}
+footer .footer-main .tag .social-link a {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  position: relative;
+  margin: 0 5px;
+  z-index: 10;
+  overflow: hidden;
+}
+
+footer .footer-main .tag .social-link a i {
+  width: 100%;
+  font-size: 15px;
+  line-height: 30px;
+  display: block;
+  margin-left: 5px;
+  z-index: 10;
+  position: relative;
+  transform: 0.5s;
+}
+footer .footer-main .tag .social-link a:hover i {
+  color: #fff;
+}
+footer .footer-main .tag .social-link a::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: -90px;
+  background: linear-gradient(-45deg, #c72092, #6c14d0);
+  position: absolute;
+  z-index: -10;
+  transition: 0.5s;
+}
+footer .footer-main .tag .social-link a:hover::after {
+  left: 0;
+}
+
+footer .footer-main .tag .search-bar {
+  width: 230px;
+  height: 30px;
+  background: rgb(202, 202, 202);
+  border-radius: 25px;
+}
+footer .footer-main .tag .search-bar input {
+  width: 200px;
+  padding: 2px 0;
+  position: relative;
+  top: 17%;
+  left: 6%;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 13px;
+}
+footer .footer-main .tag .search-bar button {
+  padding: 7px 15px;
+  background: linear-gradient(to right, #c72092, #6c14d0);
+  margin-top: 15px;
+  border-radius: 25px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
 }
